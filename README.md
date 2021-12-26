@@ -12,4 +12,5 @@
   <li>Powered and manual grasping</li>
   <li>Development framework for future updates</li>
   <li>Stable and easy to use</li>
+  <li>Always on status display</li>
 </ul>
