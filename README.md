@@ -1,4 +1,7 @@
-# Meta arm
+# Meta Bionic
+![GitHub](https://img.shields.io/github/license/felixraduica/meta-bionic)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/w/felixraduica/meta-bionic)
+
 <p>This is a research project that aims to develop a prosthetic limb. The cost is kept low by using additive manufacturing. The output of the project will be open-source and easy to mix.</p>
 
 ## Timeline
