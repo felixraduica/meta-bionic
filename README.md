@@ -1,4 +1,7 @@
 # Meta Bionic
+
+![cover of meta-bionic](https://github.com/felixraduica/meta-bionic/raw/main/cover/cover.png)
+
 ![GitHub](https://img.shields.io/github/license/felixraduica/meta-bionic)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/w/felixraduica/meta-bionic)
 
