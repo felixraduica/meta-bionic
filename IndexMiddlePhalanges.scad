@@ -6,7 +6,7 @@
 diameter = 15;
 hole = 3;
 height = 25;
-union(){
+color([0,0,1,0.25])union(){
     difference(){
         difference(){
             cylinder(h = height, r = diameter/2, $fn=360, center=false);
