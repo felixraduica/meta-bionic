@@ -1,3 +1,8 @@
+// File name: indexMiddlePhalanges.scad
+// Meta Bionic repo github.com/felixraduica/meta-bionic
+// Created and maintained by Felix Raduica
+// Open Source Software
+
 diameter = 15;
 hole = 3;
 height = 25;
