@@ -7,7 +7,7 @@ height = 30;
 diameter = 15;
 faceNumber = 560;
 hole = 3;
-
+module indexMiddleBone(){
 difference(){
 difference(){
         // Base sshape
@@ -61,9 +61,9 @@ difference(){
         // remove sides material
 
         translate([diameter*0.6, 0, height/2])
-        cube([diameter*0.6, diameter, height/2], center=true);
+        cube([diameter*0.6, diameter, height/1.5], center=true);
         translate([-diameter*0.6, 0, height/2])
-        cube([diameter*0.6, diameter, height/2], center=true);
+        cube([diameter*0.6, diameter, height/1.5], center=true);
                     // make a hole through the base shape
         translate([0, diameter/8, 0])
         cylinder(h = height+1, r = diameter/4,$fn=faceNumber, center=true);
@@ -75,7 +75,20 @@ difference(){
         rotate([0,90,0])
         cylinder(h=height, d = hole, center=true, $fn=faceNumber);
             }
-            // make pipe
+           
+        
+        // fillet edges
+        translate([0, 0, -diameter/3])
+        difference(){
+            union(){
+                translate([0, 0, height/3])
+                cube([diameter+1, diameter, diameter], center=false);
+                translate([-diameter, 0, height/3])
+                cube([diameter+1, diameter, diameter], center=false);}
+            translate([0, 0, height/2])
+            rotate([0, 90, 0])
+            cylinder(h = 40, d = diameter/1.5, $fn=faceNumber, center=true);}}
+             // make pipe
             difference(){
         translate([0, 0, 3/4*height/2])
         rotate([0,90,0])
@@ -84,16 +97,6 @@ difference(){
         rotate([0,90,0])
         cylinder(diameter, d = hole, center=true, $fn=faceNumber);}
         
-        
-        // fillet edges
-        translate([0, 0, -diameter/3])
-        difference(){
-            union(){
-                translate([0, 0, height/2.4])
-                cube([diameter+1, diameter, diameter], center=false);
-                translate([-diameter, 0, height/2.4])
-                cube([diameter+1, diameter, diameter], center=false);}
-            translate([0, 0, height/2])
-            rotate([0, 90, 0])
-            cylinder(h = 40, d = diameter/1.5, $fn=faceNumber, center=true);}}
             }
+        }
+        indexMiddleBone();
