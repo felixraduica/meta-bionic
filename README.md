@@ -19,6 +19,7 @@
   <li>Development framework for future updates</li>
   <li>Stable and easy to use</li>
   <li>Always on status display</li>
+  <li>Open source integration</li>
 </ul>
 
 ## Meta-bionic Mission Statement
