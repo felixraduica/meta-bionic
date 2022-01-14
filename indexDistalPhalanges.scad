@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 height = 30;
 diameter = 15;
 faceNumber = 560;
@@ -116,7 +115,6 @@ module indexDistalBone(){
         
             }}
             indexDistalBone();
-=======
 height = 30;
 diameter = 15;
 faceNumber = 560;
@@ -181,4 +179,3 @@ hole = 3;
         translate([-15,-15,0])
         square([30,15]);
     }
->>>>>>> b14f10d91e52a1bbe1d37b3b909d788c85aed504
